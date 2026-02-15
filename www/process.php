@@ -13,6 +13,9 @@ $_SESSION['doctor'] = $doctor;
 $_SESSION['first_consultation'] = $first_consultation;
 $_SESSION['visit_form'] = $visit_form;
 
+$line = $patient_name . ";" . $age . ";" . $doctor . ";" . $first_consultation . ";" . $visit_form . "\n";
+file_put_contents("data.txt", $line, FILE_APPEND);
+
 header("Location: index.php");
 exit();
 ?>
