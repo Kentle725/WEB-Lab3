@@ -15,3 +15,4 @@ $_SESSION['visit_form'] = $visit_form;
 
 header("Location: index.php");
 exit();
+?>
